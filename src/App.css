@@ -2,15 +2,20 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Row {
+  display: flex;
+  flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Column {
+  display: flex;
+  flex-direction: column;
+}
+
+.Box {
+  width: 600px;
+  height: 600px;
+  background-color: white;
 }
 
 .App-header {
@@ -24,15 +29,59 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.InputContainerMain {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+  background-color: #5749a0;
+  border-width: 2px;
+  border-radius: 3px;
+  margin-top: 200px;
+  border-color: #000;
+  height: fit-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.InputContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.Input {
+  width: 400px;
+  height: 50px;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.Button {
+  margin-right: 100px;
+  background-color: #5749a0;
+  border-width: 2px;
+  border-radius: 3px;
+  border-color: #000;
+  height: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.Title {
+  font-size: larger;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-display: initial;
+  font-style: normal;
+  color: #ff0;
+  margin-bottom: 30px;
+}
+
+.Warning {
+  font-size: larger;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-display: initial;
+  font-style: normal;
+  color: #ff0;
+  margin-bottom: 30px;
 }
